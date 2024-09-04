@@ -8,9 +8,17 @@ export default function Home() {
         <h1 className="text-5xl font-extrabold  text-center">Présentation</h1>
       </div>
 
-      <div className="flex flex-col mx-3 items-center gap-[1rem] w-auto md:w-[60%] mx-0">
+      <div className="flex flex-col w-auto mx-3 text-white gap-5 border border-[#070707] bg-[#0000005c] p-5 rounded-[5px] md:w-[65rem] md:mx-0">
+        <h1 className="text-5xl font-bold text-center">Qui Sommes nous ?</h1>
+        <p className="text-[20px] mt-5 leading-8">Envol Technology, anciennement denommé le Groupe Malien d'Informatique (GMI S.A), est depuis 30 ans l'un des 
+          principaux fournisseur d'infrastructures sur le marché Malien des technologies de l'information et de la communication. Avec des 
+          solutions encrées dans 3 domaines clés (le hardware, le software et la téléphonie) nous avons forgé notre capital grâce a la confiance et a la satisfaction
+          de nos clients. En tant que société pionnière notre engagement reste le meme, a savoir : fournir un travail de qualité qui 
+          perdura dans le temps.
+        </p>
+      </div>
 
-        {/* <h1 className="text-5xl">Qui sommes nous ⁉️⁉️</h1> */}
+      <div className="flex flex-col mx-3 items-center gap-[1rem] w-auto md:w-[60%] mx-0">
 
         <p className="text-[20px] mt-10 leading-8 text-center">Le Groupe Envol Technology représente le département technologie du Groupe Envol Afrique : Cinq structures
           régionales en Afrique de l’Ouest constituées par GMI (Groupe Malien d’Informatique basée au Mali),

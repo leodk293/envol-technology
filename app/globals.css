@@ -12,6 +12,7 @@
     opacity: 1;
   }
 }
+
 body {
   background-color: #111111f3;
   animation: appear 300ms ease-in-out;

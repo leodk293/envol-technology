@@ -66,13 +66,14 @@ export default function Header() {
                 </Link>
                 <div className="flex flex-row gap-5">
                     <div className="flex flex-row gap-[30px] text-[20px] font-bold text-[#f1f1f1] self-center border shadow-md bg-[#111] border-transparent px-5 py-4 rounded-[30px]">
-                        <Link className={pathname === "/" ? "text-orange-800" : ""} href={"/"}>Accueil</Link>
-                        <Link className={`text-capitalize ${pathname === "/about" ? "text-orange-800" : ""}`} href={"/about"}>À propos</Link>
-                        <Link className={pathname === "/services" ? "text-orange-800" : ""} href={"/services"}>Services</Link>
-                        <Link className={pathname === "/clients" ? "text-orange-800" : ""} href={"/clients"}>Nos Clients</Link>
+                        <Link className={`${pathname === "/" ? "text-orange-800" : ""} hover:text-orange-500 duration-300`} href={"/"}>Accueil</Link>
+                        <Link className={`text-capitalize ${pathname === "/about" ? "text-orange-800" : ""} hover:text-orange-500 duration-300`} href={"/about"}>À propos</Link>
+                        <Link className={`${pathname === "/services" ? "text-orange-800" : ""} hover:text-orange-500 duration-300`} href={"/services"}>Services</Link>
+                        <Link className={`${pathname === "/clients" ? "text-orange-800" : ""} hover:text-orange-500 duration-300`} href={"/clients"}>Nos Clients</Link>
+                        <Link className={`${pathname === "/partners" ? "text-orange-800" : ""} hover:text-orange-500 duration-300`} href={"/partners"}>Nos Partenaires</Link>
                     </div>
 
-                    <button className={`flex flex-row items-center justify-center gap-3 border border-white py-2 px-5 rounded-[30px] cursor-pointer self-center hover:translate-x-3 duration-300 ${pathname === "/contact" ? "bg-blue-950" : ""}`}>
+                    <button className={`flex flex-row items-center justify-center gap-3 border border-white py-2 px-5 rounded-[30px] cursor-pointer self-center hover:translate-x-3 duration-300 ${pathname === "/contact" ? "bg-orange-900 border-transparent" : ""}`}>
                         <Link className="text-white text-[20px]" href="/contact">Contact</Link>
                         <Image className="w-[15px] object-cover" alt="ARROW" src={arrow} />
                     </button>
@@ -99,6 +100,8 @@ export default function Header() {
                     <Link className={`text-capitalize ${pathname === "/about" ? "text-orange-800" : ""}`} href={"/about"}>À propos</Link>
                     <Link className={pathname === "/services" ? "text-orange-800" : ""} href={"/services"}>Services</Link>
                     <Link className={pathname === "/clients" ? "text-orange-800" : ""} href={"/clients"}>Nos Clients</Link>
+                    <Link className={pathname === "/partners" ? "text-orange-800" : ""} href={"/partners"}>Nos Partenaires</Link>
+                    <Link className={pathname === "/contact" ? "text-orange-800" : ""} href={"/contact"}>Contact</Link>
                 </div>
             </div>
         </header>
